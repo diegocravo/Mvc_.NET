@@ -31,8 +31,11 @@ namespace Mvc_.NET
         {
             services.AddControllersWithViews();
 
+            // Registro das dependências
             services.AddScoped<IAutorService, AutorService>();
             services.AddScoped<IAutorRepository, AutorRepository>();
+            services.AddScoped<IMoleculaService, MoleculaService>();
+            services.AddScoped<IMoleculaRepository, MoleculaRepository>();
 
             services.AddDbContext<BibliotecaContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("BibliotecaContext")));

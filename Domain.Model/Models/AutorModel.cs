@@ -12,5 +12,7 @@ namespace Domain.Model.Models
         public string Nome { get; set; }
         public string Molecula { get; set; }
         public DateTime DataSintese { get; set; }
+
+        public List<MoleculaModel> Moleculas { get; set; }
     }
 }

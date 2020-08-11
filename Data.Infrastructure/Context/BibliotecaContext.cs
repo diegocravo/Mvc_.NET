@@ -16,5 +16,6 @@ namespace Data.Infrastructure.Context
         }
 
         public DbSet<AutorModel> Autores { get; set; }
+        public DbSet<MoleculaModel> Moleculas { get; set; }
     }
 }
